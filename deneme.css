@@ -1,0 +1,37 @@
+.container{
+    display: flex; /*inline-flexdeolabilirdi*/
+    flex-direction: row; /*yönünüayarlar-columndeseydimaltaltagelirdi-*/
+    justify-content: space-between; /* Konum belirlerken*/
+    flex-wrap: wrap;/* sığmadığı yerde alta */
+    background: lightgrey;
+    width: 100%;
+
+}
+
+html , body{
+    height: 100%;
+    width: 99%;
+}
+.box{
+    width: 250px;
+    height: 250px;
+    padding: 20px;
+    margin: 40px;
+    background: silver;
+}
+
+
+
+.small-box{
+    padding: 20px;
+    margin: 2px;
+    height: 40px;
+    background: silver;
+}
+.box > h4{
+    background: burlywood;
+}
+.header{
+    background: lightsalmon;
+
+}
