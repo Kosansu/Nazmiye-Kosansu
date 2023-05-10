@@ -1,1 +1,0 @@
-alert("Sayfamıza hoşgeldiniz...");
