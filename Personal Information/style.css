@@ -20,6 +20,15 @@ a{
 ul{
     list-style-type: none;
 }
+h1 ,h2 ,h3 ,h4 ,h5 ,h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+section{
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
+}
 .clearfix::after{
     content: "";
     display: block;
@@ -38,11 +47,20 @@ ul{
 }
 /* Navbar*/
 nav {
+    width: 100%;
     font-family: 'Montserrat', sans-serif;
     background-color: #2C3E4F;
     color: #fff ;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    position: fixed;
+    z-index: 600;
+}
+header{
+    background-color: #1ABC9B;
+    height: 700px;
+    padding-top: calc(106px + 7rem);
+    text-align: center;
 }
 #logo-box{
     float: left;
@@ -71,4 +89,136 @@ nav {
 }
 #nav-links .nav-link:hover{
     color: #1ABC9B;
+}
+.img-fluid{
+    max-width: 256px;
+    height: auto;
+    border-radius:100%;
+}
+header h1{
+    color: white;
+    font-size: 5rem;
+}
+header h2{
+    color: white;
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+hr .star-light{
+    border-color: white;
+}
+hr .star-dark{
+    border-color:#2D3D4F ;
+}
+.star-light, .star-dark{
+    border: none;
+    border-top: 0.4rem solid ;
+    max-width: 25rem;
+    border-radius: 10px;
+    margin: 2.5rem auto;
+    overflow: visible;
+    height: 0;
+}
+.star-light::after{
+    color: white;
+    background-color: #1ABC9B;
+
+}
+.star-dark::after{
+    color: #2D3D4F;
+    background-color: white;
+
+}
+
+
+.star-light::after , .star-dark::after{
+    content: "\1F4BB";
+    font-weight: 900;
+    font-size: 3.2rem;
+    position: relative;
+    top: -30px;
+    padding: 0 1rem;
+
+}
+/* PORTFLİO*/
+#portfolio{
+
+
+}
+#portfolio h2{
+    font-size: 4.8rem;
+    color: #2D3D4F;
+}
+.col{
+    float: left;
+    width: 33.333%;
+    padding: 10px;
+
+
+}
+.portfolio-item{
+    position: relative;
+
+
+}
+.portfolio-item img{
+    display: block;
+    border-radius: 20px;
+}
+.img-fluid-p{
+    max-width: 100%;
+    height: auto;
+}
+.img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1ABC9B;
+    opacity: 0;
+    transition: opacity 0.4s;
+
+
+}
+.img-overlay .icon{
+    color: white;
+    font-size: 8rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+
+
+}
+.portfolio-item:hover .img-overlay{
+    opacity: 0.8;
+    border-radius: 20px;
+
+}
+#about{
+    background-color: #1ABC9B;
+    color: white;
+}
+#about h2{
+    font-size: 4.8rem;
+}
+#about-text{
+    text-align: left;
+}
+#about-text .left{
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+    padding-left: 23rem;
+}
+#about-text .right{
+    float: right;
+    width: 50%;
+    padding-left: 2rem;
+    padding-right: 23rem;
+}
+#about-text .text{
+    font-size: 2rem;
 }
