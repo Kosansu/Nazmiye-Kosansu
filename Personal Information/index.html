@@ -28,8 +28,13 @@
                 NAZMİYE KOŞANSU
             </a>
         </div>
-        <div id="nav-links">
+        <div id="nav-links" class="responsive">
             <ul>
+                <li class="nav-item nav-icon">
+                    <a href="#" class="nav-link">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Kişisel Bilgilerim</a>
                 </li>
@@ -102,7 +107,8 @@
     <hr class="star-light">
     <div id="about-text" class="clearfix">
         <div class="left">
-            <p class="text">22 Ekim 2003 doğumlu Nazmiye Koşansu.Bandırma 17 Eylül Üniversitesi'nde bilgisayar mühendisliği okuyorum.</p>
+            <p class="text">22 Ekim 2003 doğumlu Nazmiye Koşansu.Bandırma 17 Eylül Üniversitesi'nde bilgisayar
+                mühendisliği okuyorum.</p>
         </div>
         <div class="right">
             <p class="text">HTML5 ,CSS, JAVASCRİPT,JAVA,C++,PHP,MySQL Veri tabanı ,SQL dorgu diline hakimim.</p>
@@ -130,9 +136,8 @@
                     <input type="text" id="phone" placeholder="Phone">
                 </div>
                 <div class="form-group">
-                    <textarea name="message" id="message"  rows="5" placeholder="Message"></textarea>
+                    <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
                 </div>
-
 
 
             </div>
@@ -180,6 +185,18 @@
         <small>Copyright © 2023 Nazmiye Koşansu | Tüm hakları saklıdır.</small>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+
+    $(".nav-icon").click(function(){
+        $("#nav-links").toggleClass("responsive");
+        return false;
+
+    });
+
+</script>
 
 </body>
 
