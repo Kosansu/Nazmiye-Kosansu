@@ -29,23 +29,52 @@ section{
     padding-bottom: 10rem;
     text-align: center;
 }
-.btn{
-    margin-top: 2rem;
+footer{
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    background-color: #2C3E4F;
+    color: white;
+    text-align: center;
+}
+.btn-large{
     font-size: 2rem;
     padding: 2.2rem 1.6rem;
+}
+.btn{
+    margin-top: 2rem;
     font-weight: 400;
     display: inline-block;
-    background-color: transparent;
     border: 2px solid #ffffff;
     border-radius: 0.4rem;
     cursor: pointer;
     transition: all 0.5s;
 }
+.btn-social{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    line-height: 2rem
+;
+}
 .btn-outline{
     color: white;
+    border-color: white;
+    background-color: transparent;
 
 }
-.btn:hover{
+.btn-primary{
+    background-color: #1ABC9B;
+    border-color: #1ABC9B;
+    color: #ffffff ;
+    padding: 1.2rem 1rem;
+
+}
+.btn-primary:hover{
+    background-color: #128f76;
+    border-color: #128f76;
+    }
+.btn-outline:hover{
     color: #212529;
     background-color: white;
 
@@ -242,4 +271,49 @@ hr .star-dark{
 }
 #about-text .text{
     font-size: 2rem;
+}
+#contact h2{
+    font-size: 4.8rem;
+    color: #2C3E50;
+}
+#contact-form{
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}
+.form-group{
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 3rem;
+   margin-bottom: 4rem;
+}
+.form-group input , textarea{
+    border:none;
+    width: 100%;
+    display: block;
+    font-size: 2.4rem;
+
+}
+.form-group input:focus{
+    outline: 0;
+}
+.form-group textarea:focus{
+    outline: 0;
+}
+footer h4{
+    font-size: 2.4rem;
+}
+footer p{
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+footer li{
+    display: inline-block;
+    margin-right: 1rem;
+}
+.copyright{
+    background-color: #19262F;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
+    color: white;
+    text-align: center;
 }
