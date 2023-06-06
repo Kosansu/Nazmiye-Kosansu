@@ -184,7 +184,8 @@
     $(function (){
        $("#send").click(function (){
            if(confirm("Maili göndermek istediğinize emin misiniz?")) {
-               console.log("click çalıştı");
+               alert("Mail gönderildi.");
+               $("form").hide(2000);
            }
        });
 
