@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta HTTP-EQUIV="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width=device-widht ,initial-scale=1.0">
     <meta name="description" content="">
     <meta name="authoor" content="">
     <title>Personal Information</title>
@@ -17,9 +16,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
-
-
 <body>
 <nav>
     <div class="container clearfix">
@@ -44,12 +44,10 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">İletişim Bilgileri</a>
                 </li>
-
             </ul>
         </div>
     </div>
 </nav>
-
 <header>
     <div class="container">
         <img id="profile-images" class="img-fluid" src="images/profile.png">
@@ -98,9 +96,7 @@
                 </a>
             </div>
         </div>
-
     </div>
-
 </section>
 <section id="about">
     <h2>ABOUT</h2>
@@ -115,15 +111,13 @@
         </div>
     </div>
     <button class="btn btn-outline btn-large">
-        <i class="fas fa-download"> Download Now!</i>
+        <i class="fas fa-download"> CV PDF!</i>
     </button>
-
 </section>
 <section id="contact">
     <div class="container">
         <h2>CONTACT ME</h2>
         <hr class="star-dark">
-
         <form id="contact-form">
             <div class="contact-group">
                 <div class="form-group">
@@ -138,15 +132,12 @@
                 <div class="form-group">
                     <textarea name="message" id="message" rows="5" placeholder="Message"></textarea>
                 </div>
-
-
             </div>
-            <button class="btn btn-primary">
+            <button class="btn btn-primary" id="send");">
                 Send
             </button>
         </form>
     </div>
-
 </section>
 
 <footer>
@@ -170,8 +161,6 @@
                 <li>
                     <button class="btn btn-outline btn-social"><i class="fab fa-dribbble"></i></button>
                 </li>
-
-
             </ul>
         </div>
         <div class="col">
@@ -185,20 +174,24 @@
         <small>Copyright © 2023 Nazmiye Koşansu | Tüm hakları saklıdır.</small>
     </div>
 </div>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
 <script>
-
-    $(".nav-icon").click(function(){
+    $(".nav-icon").click(function () {
         $("#nav-links").toggleClass("responsive");
         return false;
-
     });
 
+    $(function (){
+       $("#send").click(function (){
+           if(confirm("Maili göndermek istediğinize emin misiniz?")) {
+               console.log("click çalıştı");
+           }
+       });
+
+    });
 </script>
 
+
+
 </body>
-
-
 </html>
